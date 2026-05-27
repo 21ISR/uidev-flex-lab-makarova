@@ -3,12 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
 }
+
 .container {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 .header,
 .footer {
     background: #333;
@@ -16,47 +21,71 @@ body {
     text-align: center;
     padding: 20px;
 }
+
 .nav {
     background: #444;
     color: white;
     padding: 15px;
-
     gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
+
 .main {
     padding: 20px;
     gap: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
 }
+
 .sidebar {
     background: #f4f4f4;
     padding: 20px;
     width: 25%;
 }
+
 .content {
     background: #ddd;
     padding: 20px;
     gap: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
+
 .section {
     background: white;
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    height: 200px;
 }
+
 .card-container {
     gap: 15px;
     width: 100%;
+    display: flex;
+    flex-direction: right;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .card {
     background: white;
     padding: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    flex-basis: calc((100% - 30px) / 3);
 }
+
 .footer {
     margin-top: 20px;
 }
